@@ -1,0 +1,294 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pausemenu {
+  display: none;
+}
+.character {
+    width: 890px;
+    height: 150px;
+    margin-bottom: 500px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); /* Added glowing effect */
+
+}
+.character-text {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 20px;
+    font-weight: 600;
+    color: white;
+    font-size: 42px; 
+}
+.jobbox {
+    width: 106px;
+    height: 25px;
+    background-color: black;
+    border-radius: 5px;
+    margin-left: 290px;
+    margin-top: -42px;
+
+}
+.jobtext {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 8px;
+    color:white;
+}
+.cashbox {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #168118;
+    margin-top: 15px;
+    margin-left: 12px;
+}
+.cashicon {
+    position: absolute;
+    width: 40px; /* Adjust size as needed */
+    height: 40px; /* Adjust size as needed */
+    border-radius: 50%; /* Make it a circle */
+    background-color: white;
+    margin-left: 5px;
+    margin-top: 4px; /* Adjust the margin-top value to position it */
+    display: flex;
+    justify-content: center; /* Center the icon horizontally */
+    align-items: center; /* Center the icon vertically */
+}
+
+.cashicon i {
+    color: #000000; /* Adjust icon color */
+    font-size: 24px; /* Adjust icon size */
+}
+
+.cashamount {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 52px;
+    margin-top: 20px;
+    color:white;
+    font-weight: 800;
+}
+.bankamount {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 52px;
+    margin-top: 20px;
+    color:white;
+    font-weight: 800;
+}
+.cbalance {
+    position: absolute;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    margin-left: 50px;
+    margin-top: 2px;
+    color: white;
+}
+
+.bankbox {
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #168118;
+    margin-top: -50px;
+    margin-left: 180px;
+}
+.playeronline {
+    position: absolute;
+    margin-top: 530px;
+    width: 430px;
+    height: 100px;
+    background-color: rgba(31, 31, 32, 0.2);
+    box-shadow: 0 0 20px rgba(2, 2, 2, 0.8); /* Added glowing effect */
+    border: 1px solid rgba(26, 25, 27, 0.2);
+    border-radius: 20px;
+    margin-right: 460px;
+    display: none;
+
+}
+.police {
+    position: absolute;
+    margin-top: 530px;
+    width: 430px;
+    height: 100px;
+    background-color: rgba(22, 22, 252, 0.2);
+    box-shadow: 0 0 20px rgba(26, 26, 1072, 0.8); /* Added glowing effect */
+    border: 1px solid rgba(26, 26, 107, 0.2);
+    border-radius: 20px;
+    margin-right: -430px;
+    display: none;
+}
+.map {
+    position: absolute;
+    margin-top: -482px;
+    width: 420px;
+    height: 350px;
+    background-color: rgba(65, 9, 219, 0.2);
+    box-shadow: 0 0 20px rgba(65, 9, 219, 0.8); /* Added glowing effect */
+    border: 1px solid rgba(65, 9, 219, 0.2);
+    border-radius: 20px;
+}
+.settings {
+    position: absolute;
+    margin-top: 38px;
+    margin-left: 190px;
+    width: 200px;
+    height: 350px;
+    background-color: rgba(230, 174, 20, 0.2);
+    box-shadow: 0 0 20px rgba(230, 174, 20, 0.8); /* Added glowing effect */
+    border: 1px solid rgba(230, 174, 20, 0.2);
+    border-radius: 20px;
+  display: none;
+}
+.discord {
+    position: absolute;
+    margin-top: -110px;
+    margin-left: 630px;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(114, 137, 218, 0.2);
+    box-shadow: 0 0 20px rgba(114, 137, 218, 0.8); /* Added glowing effect */
+    border: 1px solid rgba(114, 137, 218, 0.2);
+    border-radius: 20px;
+  display: none;
+}
+.maptext {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 100px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+.potext {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -19px;
+    margin-left: -90px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    color: white;
+}
+.policet {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -19px;
+    margin-left: -140px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    font-size: 35px;
+    color: white;
+}
+.players {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 10px;
+    margin-left: 110px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+.policeo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 10px;
+    margin-left: 70px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: white;
+}
+.settingstext {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 100px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    font-size: 39px;
+    color: white;
+
+}
+.discordtext {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -120%);
+    margin-top: 100px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    font-size: 39px;
+    color: white;
+
+}
+.leavetext {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -120%);
+    margin-top: 75px;
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+    font-size: 29px;
+    color: white;
+}
+.leave {
+    position: absolute;
+    margin-top: 250px;
+    margin-left: 630px;
+    width: 200px;
+    height: 130px;
+    background-color: rgba(240, 42, 35, 0.2);
+    box-shadow: 0 0 20px rgba(240, 42, 35, 0.8); /* Added glowing effect */
+    border: 1px solid rgba(240, 42, 35, 0.2);
+    border-radius: 20px;
+   display: none;
+}
+.settingsicon {
+    margin-top: -50px;
+    width: 170px;
+    height: 170px;
+    backgroucolor: white;
+}
+.leaveicon {
+    margin-top: -30px;
+    width: 70px;
+    height: 70px;
+    backgroucolor: white;
+}
+.discordicon {
+    margin-top: -50px;
+    width: 150px;
+    height: 150px;
+    backgroucolor: white;
+}
+.mapicon {
+    margin-top: -50px;
+    width: 250px;
+    height: 250px;
+    backgroucolor: white;
+}
