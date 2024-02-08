@@ -1,5 +1,6 @@
 window.addEventListener("message", (event) => {
     const drawTextElement = document.getElementById("drawText");
+    var dollar = Intl.NumberFormat('en-US');
     if (event.data.type === 'characterData') {
         // Access the data sent from Lua
         var characterData = event.data.data;
@@ -7,8 +8,8 @@ window.addEventListener("message", (event) => {
         // Update the HTML elements with the received data
         document.querySelector('.character-text').innerHTML = characterData.characterName;
         document.querySelector('.jobtext').innerHTML = characterData.job;
-        document.querySelector('.cashamount').innerHTML = characterData.cashAmount;
-        document.querySelector('.bankamount').innerHTML = characterData.bankAmount;
+        document.querySelector('.cashamount').innerHTML = (dollar.format(characterData.cashAmount));
+        document.querySelector('.bankamount').innerHTML = (dollar.format(characterData.bankAmount));
         document.querySelector('.players').innerText = characterData.playersOnline;
         document.querySelector('.policeo').innerText = characterData.policeAvailable ? 'AVAILABLE' : 'UNAVAILABLE';
     
