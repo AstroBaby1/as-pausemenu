@@ -1,5 +1,4 @@
 local QBCore = exports['qb-core']:GetCoreObject()
-local Player = QBCore.Functions.GetPlayerData() 
 local open = false
 local loaded = false
 AddEventHandler('QBCore:Client:OnPlayerLoaded', function()
@@ -11,6 +10,7 @@ Citizen.CreateThread(function()
         Wait(1)
         SetPauseMenuActive(false)
 	if loaded then
+  		local Player = QBCore.Functions.GetPlayerData() 
 	        if (IsControlJustPressed(0, 200)) and not open and not IsPauseMenuActive() then
 	            TransitionToBlurred(1000)
 	            SetNuiFocus(true, true)
