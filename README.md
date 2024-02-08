@@ -16,6 +16,9 @@ To install the `as-pausemenu` script on your FiveM server, follow these steps:
 ## Dependencies
 
 - qb-core
+## Discord
+
+- https://discord.gg/BYeaSZpSux
 
 ## Usage
 
