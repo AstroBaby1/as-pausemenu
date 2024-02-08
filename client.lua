@@ -15,7 +15,7 @@ Citizen.CreateThread(function()
                 print("heLLO")
                 local characterData = {
                     characterName = Player.charinfo.firstname..' '..Player.charinfo.lastname,
-                    job = Player.job.name,
+                    job = Player.job.label,
                     cashAmount = Player.money['cash'],
                     bankAmount = Player.money['bank'],
                     playersOnline = playersOnline,
